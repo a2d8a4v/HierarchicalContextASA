@@ -1,0 +1,12 @@
+conda install -c "nvidia/label/cuda-11.6.0" cuda-nvcc
+conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.6 -c pytorch -c conda-forge
+# conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.6 -c pytorch -c conda-forge
+# or 1.13.0
+# conda install pytorch==1.13.0 torchvision==0.14.0 torchaudio==0.13.0 pytorch-cuda=11.6 -c pytorch -c nvidia
+# pip install dgl==1.0.0 -f https://data.dgl.ai/wheels/cu116/repo.html
+pip install dgl==0.4 -f https://data.dgl.ai/wheels/cu116/repo.html
+pip install dglgo -f https://data.dgl.ai/wheels-test/repo.html
+pip install pytablewriter xlsxwriter nltk configargparse deepspeed
+pip install boto3 sentencepiece seaborn # mpi4py
+pip install transformers wandb # peft
+pip install pytokenizations
